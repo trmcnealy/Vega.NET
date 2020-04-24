@@ -1,0 +1,197 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <Import Project="..\Versioning.props" />
+
+  <PropertyGroup>
+    <UseWPF>true</UseWPF>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Vega.Test</RootNamespace>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ExampleFiles\airport-connections.vg.json" />
+    <None Remove="ExampleFiles\annual-precipitation.vg.json" />
+    <None Remove="ExampleFiles\annual-temperature.vg.json" />
+    <None Remove="ExampleFiles\arc-diagram.vg.json" />
+    <None Remove="ExampleFiles\area-chart.vg.json" />
+    <None Remove="ExampleFiles\bar-chart.vg.json" />
+    <None Remove="ExampleFiles\barley-trellis-plot.vg.json" />
+    <None Remove="ExampleFiles\beeswarm-plot.vg.json" />
+    <None Remove="ExampleFiles\binned-scatter-plot.vg.json" />
+    <None Remove="ExampleFiles\box-plot.vg.json" />
+    <None Remove="ExampleFiles\brushing-scatter-plots.vg.json" />
+    <None Remove="ExampleFiles\budget-forecasts.vg.json" />
+    <None Remove="ExampleFiles\circle-packing.vg.json" />
+    <None Remove="ExampleFiles\clock.vg.json" />
+    <None Remove="ExampleFiles\connected-scatter-plot.vg.json" />
+    <None Remove="ExampleFiles\contour-plot.vg.json" />
+    <None Remove="ExampleFiles\county-unemployment.vg.json" />
+    <None Remove="ExampleFiles\crossfilter-flights.vg.json" />
+    <None Remove="ExampleFiles\density-heatmaps.vg.json" />
+    <None Remove="ExampleFiles\distortion-comparison.vg.json" />
+    <None Remove="ExampleFiles\donut-chart.vg.json" />
+    <None Remove="ExampleFiles\dorling-cartogram.vg.json" />
+    <None Remove="ExampleFiles\dot-plot.vg.json" />
+    <None Remove="ExampleFiles\earthquakes.vg.json" />
+    <None Remove="ExampleFiles\edge-bundling.vg.json" />
+    <None Remove="ExampleFiles\error-bars.vg.json" />
+    <None Remove="ExampleFiles\falkensee-population.vg.json" />
+    <None Remove="ExampleFiles\force-directed-layout.vg.json" />
+    <None Remove="ExampleFiles\global-development.vg.json" />
+    <None Remove="ExampleFiles\grouped-bar-chart.vg.json" />
+    <None Remove="ExampleFiles\heatmap.vg.json" />
+    <None Remove="ExampleFiles\histogram-null-values.vg.json" />
+    <None Remove="ExampleFiles\histogram.vg.json" />
+    <None Remove="ExampleFiles\horizon-graph.vg.json" />
+    <None Remove="ExampleFiles\hypothetical-outcome-plots.vg.json" />
+    <None Remove="ExampleFiles\interactive-legend.vg.json" />
+    <None Remove="ExampleFiles\job-voyager.vg.json" />
+    <None Remove="ExampleFiles\line-chart.vg.json" />
+    <None Remove="ExampleFiles\loess-regression.vg.json" />
+    <None Remove="ExampleFiles\nested-bar-chart.vg.json" />
+    <None Remove="ExampleFiles\overview-plus-detail.vg.json" />
+    <None Remove="ExampleFiles\pacman.vg.json" />
+    <None Remove="ExampleFiles\parallel-coordinates.vg.json" />
+    <None Remove="ExampleFiles\pi-monte-carlo.vg.json" />
+    <None Remove="ExampleFiles\pie-chart.vg.json" />
+    <None Remove="ExampleFiles\population-pyramid.vg.json" />
+    <None Remove="ExampleFiles\probability-density.vg.json" />
+    <None Remove="ExampleFiles\projections.vg.json" />
+    <None Remove="ExampleFiles\quantile-dot-plot.vg.json" />
+    <None Remove="ExampleFiles\quantile-quantile-plot.vg.json" />
+    <None Remove="ExampleFiles\radar-chart.vg.json" />
+    <None Remove="ExampleFiles\radial-plot.vg.json" />
+    <None Remove="ExampleFiles\radial-tree-layout.vg.json" />
+    <None Remove="ExampleFiles\regression.vg.json" />
+    <None Remove="ExampleFiles\reorderable-matrix.vg.json" />
+    <None Remove="ExampleFiles\scatter-plot-null-values.vg.json" />
+    <None Remove="ExampleFiles\scatter-plot.vg.json" />
+    <None Remove="ExampleFiles\stacked-area-chart.vg.json" />
+    <None Remove="ExampleFiles\stacked-bar-chart.vg.json" />
+    <None Remove="ExampleFiles\stock-index-chart.vg.json" />
+    <None Remove="ExampleFiles\sunburst.vg.json" />
+    <None Remove="ExampleFiles\time-units.vg.json" />
+    <None Remove="ExampleFiles\timelines.vg.json" />
+    <None Remove="ExampleFiles\top-k-plot-with-others.vg.json" />
+    <None Remove="ExampleFiles\top-k-plot.vg.json" />
+    <None Remove="ExampleFiles\tree-layout.vg.json" />
+    <None Remove="ExampleFiles\treemap.vg.json" />
+    <None Remove="ExampleFiles\u-district-cuisine.vg.json" />
+    <None Remove="ExampleFiles\violin-plot.vg.json" />
+    <None Remove="ExampleFiles\volcano-contours.vg.json" />
+    <None Remove="ExampleFiles\watch.vg.json" />
+    <None Remove="ExampleFiles\weekly-temperature.vg.json" />
+    <None Remove="ExampleFiles\wheat-and-wages.vg.json" />
+    <None Remove="ExampleFiles\wheat-plot.vg.json" />
+    <None Remove="ExampleFiles\wind-vectors.vg.json" />
+    <None Remove="ExampleFiles\word-cloud.vg.json" />
+    <None Remove="ExampleFiles\world-map.vg.json" />
+    <None Remove="ExampleFiles\zoomable-scatter-plot.vg.json" />
+    <None Remove="ExampleFiles\zoomable-world-map.vg.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ExampleFiles\airport-connections.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\annual-precipitation.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\annual-temperature.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\arc-diagram.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\area-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\bar-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\barley-trellis-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\beeswarm-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\binned-scatter-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\box-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\brushing-scatter-plots.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\budget-forecasts.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\circle-packing.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\clock.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\connected-scatter-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\contour-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\county-unemployment.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\crossfilter-flights.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\density-heatmaps.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\distortion-comparison.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\donut-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\dorling-cartogram.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\dot-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\earthquakes.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\edge-bundling.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\error-bars.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\falkensee-population.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\force-directed-layout.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\global-development.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\grouped-bar-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\heatmap.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\histogram-null-values.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\histogram.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\horizon-graph.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\hypothetical-outcome-plots.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\interactive-legend.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\job-voyager.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\line-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\loess-regression.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\nested-bar-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\overview-plus-detail.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\pacman.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\parallel-coordinates.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\pi-monte-carlo.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\pie-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\population-pyramid.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\probability-density.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\projections.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\quantile-dot-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\quantile-quantile-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\radar-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\radial-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\radial-tree-layout.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\regression.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\reorderable-matrix.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\scatter-plot-null-values.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\scatter-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\stacked-area-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\stacked-bar-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\stock-index-chart.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\sunburst.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\time-units.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\timelines.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\top-k-plot-with-others.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\top-k-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\tree-layout.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\treemap.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\u-district-cuisine.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\violin-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\volcano-contours.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\watch.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\weekly-temperature.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\wheat-and-wages.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\wheat-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\wind-vectors.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\word-cloud.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\world-map.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\zoomable-scatter-plot.vg.json" />
+    <EmbeddedResource Include="ExampleFiles\zoomable-world-map.vg.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.13" />
+    <PackageReference Include="Vega.NET" Version="$(VEGA_VERSION)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Examples.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Examples.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Examples.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Examples.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

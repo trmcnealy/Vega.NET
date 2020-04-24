@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="airport_connections_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\airport-connections.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="annual_precipitation_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\annual-precipitation.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="annual_temperature_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\annual-temperature.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="arc_diagram_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\arc-diagram.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="area_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\area-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="barley_trellis_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\barley-trellis-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="bar_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\bar-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="beeswarm_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\beeswarm-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="binned_scatter_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\binned-scatter-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="box_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\box-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="brushing_scatter_plots_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\brushing-scatter-plots.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="budget_forecasts_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\budget-forecasts.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="circle_packing_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\circle-packing.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="clock_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\clock.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="connected_scatter_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\connected-scatter-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="contour_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\contour-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="county_unemployment_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\county-unemployment.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="crossfilter_flights_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\crossfilter-flights.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="density_heatmaps_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\density-heatmaps.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="distortion_comparison_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\distortion-comparison.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="donut_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\donut-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="dorling_cartogram_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\dorling-cartogram.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="dot_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\dot-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="earthquakes_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\earthquakes.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="edge_bundling_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\edge-bundling.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="error_bars_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\error-bars.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="falkensee_population_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\falkensee-population.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="force_directed_layout_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\force-directed-layout.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="global_development_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\global-development.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="grouped_bar_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\grouped-bar-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="heatmap_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\heatmap.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="histogram_null_values_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\histogram-null-values.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="histogram_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\histogram.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="horizon_graph_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\horizon-graph.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="hypothetical_outcome_plots_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\hypothetical-outcome-plots.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="interactive_legend_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\interactive-legend.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="job_voyager_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\job-voyager.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="line_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\line-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="loess_regression_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\loess-regression.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="nested_bar_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\nested-bar-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="overview_plus_detail_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\overview-plus-detail.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="pacman_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\pacman.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="parallel_coordinates_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\parallel-coordinates.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="pie_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\pie-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="pi_monte_carlo_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\pi-monte-carlo.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="population_pyramid_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\population-pyramid.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="probability_density_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\probability-density.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="projections_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\projections.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="quantile_dot_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\quantile-dot-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="quantile_quantile_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\quantile-quantile-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="radar_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\radar-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="radial_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\radial-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="radial_tree_layout_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\radial-tree-layout.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="regression_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\regression.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="reorderable_matrix_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\reorderable-matrix.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="scatter_plot_null_values_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\scatter-plot-null-values.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="scatter_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\scatter-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="stacked_area_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\stacked-area-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="stacked_bar_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\stacked-bar-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="stock_index_chart_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\stock-index-chart.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="sunburst_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\sunburst.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="timelines_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\timelines.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="time_units_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\time-units.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="top_k_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\top-k-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="top_k_plot_with_others_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\top-k-plot-with-others.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="treemap_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\treemap.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="tree_layout_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\tree-layout.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="u_district_cuisine_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\u-district-cuisine.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="violin_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\violin-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="volcano_contours_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\volcano-contours.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="watch_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\watch.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="weekly_temperature_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\weekly-temperature.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="wheat_and_wages_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\wheat-and-wages.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="wheat_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\wheat-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="wind_vectors_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\wind-vectors.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="word_cloud_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\word-cloud.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="world_map_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\world-map.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="zoomable_scatter_plot_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\zoomable-scatter-plot.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="zoomable_world_map_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExampleFiles\zoomable-world-map.vg.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+</root>

@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Versioning.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Vega</RootNamespace>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Timothy R. McNealy</Authors>
+    <PackageIcon>nindra.png</PackageIcon>
+    <PackageIconUrl />
+    <Description>C# Specification for https://github.com/vega/vega</Description>
+    <Copyright>© Timothy R. McNealy</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/trmcnealy/Vega.NET</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/trmcnealy/Vega.NET</PackageProjectUrl>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Version>$(VEGA_VERSION)</Version>
+    <Platforms>AnyCPU;x64</Platforms>
+    <PackageOutputPath Condition="'$(PACKAGE_CACHE)'!=''">$(PACKAGE_CACHE)</PackageOutputPath>
+    <PackageOutputPath Condition="'$(PACKAGE_CACHE)'==''">$(OutputPath)</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.Interactive.Formatting" Version="1.0.0-beta.20154.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="VegaLite.NET.csproj.DotSettings" />
+    <None Include="..\..\trmcnealy.github.io\assets\nindra.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="ChartSpecifications\" />
+    <Folder Include="Charts\" />
+  </ItemGroup>
+  
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="&#xA;rd /s /q C:\Users\tehgo\.nuget\packages\vega.net" />
+  </Target>
+
+</Project>
