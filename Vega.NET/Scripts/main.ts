@@ -1,3 +1,12 @@
+//"dependencies": {
+//  "@mapd/connector": "^5.1.2",
+//  "d3-color": "^1.4.0",
+//  "gh-pages": "^2.2.0",
+//  "vega": "^5.10.0",
+//  "vega-transform-omnisci-core": "^0.0.9",
+//  "vega-webgl-renderer": "^1.0.0-beta.2"
+//}
+
 import "@mapd/connector/dist/browser-connector";
 import "vega-webgl-renderer/build/vega-webgl-renderer";
 

@@ -1,9 +1,14 @@
-﻿using System;
+﻿#nullable enable
+using System;
+using System.CodeDom.Compiler;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Xml;
@@ -114,13 +119,18 @@ namespace Vega.Test
         [STAThread]
         private static void Main(string[] args)
         {
-            foreach(Specification exampleSpecification in ExampleSpecifications)
-            {
-                VegaChart chart = new VegaChart(exampleSpecification.Description,
-                                                exampleSpecification);
+            //foreach(Specification exampleSpecification in ExampleSpecifications)
+            //{
+            //    VegaChart chart = new VegaChart(exampleSpecification.Description,
+            //                                    exampleSpecification);
+            //
+            //    chart.ShowInBrowser();
+            //}
 
-                chart.ShowInBrowser();
-            }
+            Schema.Specification spec = ExampleSpecifications.First();
+
         }
+
+
     }
 }
