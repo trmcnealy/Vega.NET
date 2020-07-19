@@ -13,41 +13,41 @@ namespace Vega.Charts
     {
         public Guid Id
         {
-            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
             get;
         }
 
         public string Title
         {
-            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
             get;
         }
 
         public Schema.Specification Specification
         {
-            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
             get;
         }
 
         public double? Width
         {
-            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
             get { return Specification.Width; }
-            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
             set { Specification.Width = value; }
         }
 
         public double? Height
         {
-            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
             get { return Specification.Height; }
-            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
             set { Specification.Height = value; }
         }
 
         #region Constructors
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
         protected VegaChart(string title,
                             Guid?  id = null)
         {
@@ -63,7 +63,7 @@ namespace Vega.Charts
             }
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
         public VegaChart(string               title,
                          Schema.Specification vegaLiteSpecification,
                          Guid?                id = null)
@@ -75,7 +75,7 @@ namespace Vega.Charts
 
         #endregion
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
         public override string ToString()
         {
             return GetHtml();
@@ -84,7 +84,7 @@ namespace Vega.Charts
         public static           string VegaUrl = "https://cdn.jsdelivr.net/npm/vega";
         private static readonly string LE      = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "\r\n" : "\n";
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
         public string GetHtmlContent()
         {
             string uid = Id.ToString().Replace("-",
@@ -109,7 +109,7 @@ namespace Vega.Charts
             return content;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
         public string GetHtml()
         {
             string html = $"<!DOCTYPE html>{LE}"                                                      +
@@ -126,7 +126,7 @@ namespace Vega.Charts
             return new HtmlString(html).ToString();
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
         public void ShowInBrowser()
         {
             string tempPath = Path.GetTempPath();
